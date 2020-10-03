@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import csv
 import pandas as pd
 
+# file
 def wlf_dir(dir):
     os.chdir(dir)
     list_dir = os.listdir(dir)
@@ -190,50 +191,6 @@ def concat(vol, cur):
 
 
 
-# file2 = file_select_cv(path)[0]
-# file_cv = file_del_head_cv(file2)
-# [vol, cur] = devide_list_cv(file_cv)
-# [vol, cur] = list_last_cv(vol, cur)
-
-# path_cp = r'F:\wang\python\wang\SC\cp.csv'
-# rm_file(path_cp)
-# data = pd.DataFrame({'': []})
-# file_cp = file_select_cp(path)
-# for file in file_cp:
-#     file = file_del_head_cp(file)
-#     [vol, cur] = devide_list_cv(file)
-#     [vol, cur] = list_last_cp(vol, cur)
-#     data1 = concat(vol, cur)
-#     data = pd.concat([data, data1], axis=1)
-# with open(path_cp, 'w') as f:
-#     data.to_csv(path_cp)
 
 
-
-
-
-# file2 = file_select_cp(path)[2]
-# file_cp = file_del_head_cp(file2)
-# [vol, cur] = devide_list_cv(file_cp)
-# [vol, cur] = list_last_cp(vol, cur)
-# path_cp = r'F:\wang\python\wang\SC\cp.csv'
-# rm_file(path_cp)
-
-
-#
-# with open(path_cp, 'w') as f:
-#     data = concat(vol,cur)
-#     data.to_csv(path_cp)
-#
-#     a = [1,2,3]
-#     b = [4,5]
-#     df = pd.concat([pd.DataFrame({'a': a}), pd.DataFrame({'b': b})],  axis=1)
-#     # df = df[~(df['col'].isnull())]
-#     a.to_csv(f, index=None, header=0)
-#     print(a)
-#     # writer = csv.writer(f)
-#     # writer.writerow(vol+'\n')
-
-# print(df)
-#
 
